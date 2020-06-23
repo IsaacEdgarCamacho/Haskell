@@ -6,4 +6,4 @@ Main> mitad 5
 -}
 
 mitad :: Fractional t  => t -> t
-mitad a = a / 2
+mitad a = (a /) 2

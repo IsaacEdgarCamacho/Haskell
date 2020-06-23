@@ -7,6 +7,10 @@ Main> esNumeroPositivo 0.99
 True
 -}
 
-esNumeroPositivo:: Float-> Bool
+esNumeroPositivo:: Float-> Bool -- version original
 esNumeroPositivo x  | x >= 0        = True
                     | otherwise     = False
+
+
+esNumeroPositivo1::Float-> Bool
+esNumeroPositivo1 x  = (0<) x

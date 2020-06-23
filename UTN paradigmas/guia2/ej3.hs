@@ -8,4 +8,4 @@ Main> inversa 0.5
 -}
 
 inversa :: Float -> Float
-inversa x = 1/x
+inversa x = (1/) x

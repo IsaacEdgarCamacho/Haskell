@@ -2,13 +2,13 @@
 Resolver la función del ejercicio 2 de la guía anterior ​ esMultiploDe/2​ , utilizando
 aplicación parcial y composición.
 -}
-type Persona = (String, Integer, String)
 
-edad :: Persona-> Integer
-edad ( _ , y , _ )  = y
+esMultiploDe :: Integer -> Integer-> Bool --VErsion original
+esMultiploDe x y    | mod x y  == 0 = True 
+                    | otherwise     = False    
 
-mayorEdad::Integer -> Bool
-mayorEdad x = x >= 18
+esMultiploDe2::Integer->Integer->Bool --con aplicacion parcial
+esMultiploDe2 x y = (esMultiploDe x) y
 
-esMayorDeEdad :: Persona -> Bool
-esMayorDeEdad = mayorEdad . edad
+esMultiploDe3::Integer->Integer->Bool --con composicion
+esMultiploDe3 x y = mod x y == 0

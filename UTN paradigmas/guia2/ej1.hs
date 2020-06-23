@@ -6,4 +6,4 @@ Main> siguiente 3
 -}
 
 siguiente:: Num a => a -> a
-siguiente x = x + 1
+siguiente x = (x+) 1

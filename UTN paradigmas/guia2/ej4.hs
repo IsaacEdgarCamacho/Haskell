@@ -6,4 +6,4 @@ Main> triple 5
 -}
 
 triple :: Num a => a->a
-triple x = 3 * x
+triple x = (3*) x
