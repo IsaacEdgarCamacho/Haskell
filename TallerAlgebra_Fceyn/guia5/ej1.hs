@@ -29,3 +29,4 @@ cantDivisores x y   | y == 1        = 1
 
 esPrimo :: Integer-> Bool
 esPrimo n = cantDivisores n n == 2
+
