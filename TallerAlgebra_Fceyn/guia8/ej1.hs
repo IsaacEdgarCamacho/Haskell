@@ -8,7 +8,7 @@ type Set a = [a]
 vacio :: Set Integer -> Bool
 vacio a = a == []
 
--- mplementar entre todos la función
+-- implementar entre todos la función
 -- agregar :: Integer -> Set Integer -> Set Integer
 -- que dado un entero y un conjunto agrega el primero al segundo (ayuda: La función
 -- “pertenece” en Haskell existe y se llama “elem”)
